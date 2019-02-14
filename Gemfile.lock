@@ -20,9 +20,12 @@ GEM
     autoprefixer-rails (9.4.7)
       execjs
     backports (3.11.4)
-    bootstrap-sass (3.4.1)
-      autoprefixer-rails (>= 5.2.1)
-      sassc (>= 2.0.0)
+    bootstrap (4.0.0)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     byebug (10.0.2)
     coderay (1.1.2)
     coffee-script (2.4.1)
@@ -103,6 +106,7 @@ GEM
     padrino-support (0.13.3.4)
       activesupport (>= 3.1)
     parallel (1.13.0)
+    popper_js (1.14.5)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -116,6 +120,11 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    sass (3.7.3)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.0.0)
       ffi (~> 1.9.6)
       rake
@@ -136,7 +145,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
+  bootstrap (~> 4.0.0)
+  bootstrap-sass (= 3.2.0.2)
   font-awesome-sass
   jquery-middleman
   middleman (~> 4.2)
@@ -144,6 +154,7 @@ DEPENDENCIES
   middleman-deploy!
   middleman-sprockets
   pry-byebug
+  sassc
 
 BUNDLED WITH
-   1.17.1
+   1.17.2
